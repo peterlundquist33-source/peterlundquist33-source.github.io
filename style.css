@@ -1,0 +1,26 @@
+:root{--navy:#0b1b33;--navy2:#13264a;--gold:#f0b429;--gold2:#ffd76a;
+--ink:#e8eefc;--dim:#9fb0cc;--line:#24375c;--bg:#070f1f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:var(--gold2)}
+.hero{padding:64px 20px 40px;text-align:center;
+background:linear-gradient(180deg,var(--navy2),var(--bg));
+border-bottom:2px solid var(--gold)}
+.hero h1{margin:0;font-size:42px;letter-spacing:.5px;color:var(--gold)}
+.hero .sub{margin:10px 0 0;color:var(--dim);font-size:16px}
+main{max-width:1060px;margin:0 auto;padding:28px 16px 60px}
+.grp{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);
+margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.tile{display:block;position:relative;background:var(--navy);border:1px solid var(--line);
+border-radius:13px;padding:20px 20px 46px;text-decoration:none;color:inherit;
+transition:border-color .16s,transform .16s,background .16s}
+.tile:hover{border-color:var(--gold);background:#102247;transform:translateY(-2px)}
+.ico{font-size:24px;line-height:1}
+.tile h3{margin:10px 0 7px;font-size:19px;color:var(--gold2)}
+.tile p{margin:0;font-size:14px;color:#cfdcf2}
+.go{position:absolute;left:20px;bottom:16px;font-size:12px;letter-spacing:1.4px;
+text-transform:uppercase;color:var(--gold);font-weight:600}
+footer{text-align:center;color:var(--dim);font-size:13px;padding:30px 16px}
+@media(max-width:600px){.hero{padding:44px 16px 30px}.hero h1{font-size:32px}}
